@@ -1,0 +1,49 @@
+.main-container{
+    background-color: #c7ecee !important;
+    padding: 30px 0px;
+}
+
+.opt-btn{
+    background-color: #1e3799;
+    border: 1px solid #543800;
+    color: white;
+    box-shadow: 0px 3px 6px #130f40 !important;
+    margin: 5px;
+}
+/* Transact Button */
+#transact-btn,#add-account-btn{
+    background-color: #1e3799;
+    border: 1px solid #543800;
+    color: white;
+    box-shadow: 0px 3px 6px #130f40 !important;
+}
+
+.offcanvas{
+    background-color: #54a0ff;
+}
+.transact-btn{
+    background-color: #1e3799;
+    border: 1px solid #543800;
+    color: white;
+}
+/* Card: Payment Card */
+/* .payment-card{
+    display: none;
+} */
+
+/* Card:Transfer Card */
+/* .transfer-card{
+    display: none;
+} */
+
+/* Card: deposit Card */
+/* .deposit-card{
+    display: none;
+} */
+
+/* Card: Withdraw Card */
+/* .withdraw-card{
+    display: none;
+}
+ */
+

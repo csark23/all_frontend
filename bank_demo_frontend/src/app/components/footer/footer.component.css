@@ -1,0 +1,16 @@
+/* Main Body Styling */
+.container{
+    margin: 10px auto;
+}
+
+/* Main Page Header */
+.main-page-header{
+    padding: 6px 0px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+}
+.main-page-header .company-name{
+    font-weight: 600;
+    color:white;
+}
