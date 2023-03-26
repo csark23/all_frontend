@@ -1,0 +1,60 @@
+<div class="d-flex align-items-center justify-content-center main-container">
+    <!-- Card: Register -->
+    <div class="card registration-form-card col-6">
+        <div class="card-body">
+            <!-- Form Header -->
+                <h1 class="form-header card-title mb-3">
+                    <i class="fa fa-edit"></i>Register
+                </h1>
+            <!-- End Form Header -->
+            <!-- Registration Form -->
+                <form (ngSubmit)="formSubmit()" class="reg-form">
+
+                    <div class="form-group col">
+                        <input [(ngModel)]="user.username" required type="text" class="form-control form-control-lg" placeholder="Enter Username" name="username">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                          <input [(ngModel)]="user.firstname" type="text" class="form-control form-control-lg" placeholder="Enter First Name" name="firstname">
+                        </div>
+                        <div class="form-group col">
+                          <input [(ngModel)]="user.lastname" type="text" class="form-control form-control-lg" placeholder="Enter Last Name" name="lastname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                            <input [(ngModel)]="user.email" type="email" class="form-control form-control-lg" placeholder="Enter Email" name="email">
+                        </div>
+                        <div class="form-group col">
+                            <input [(ngModel)]="user.phone" type="text" class="form-control form-control-lg" placeholder="Enter phone no" name="phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col">
+                          <input [(ngModel)]="user.password" type="password" class="form-control form-control-lg" placeholder="Password" name="password">
+                        </div>
+                        <!-- <div class="form-group col">
+                          <input type="password" class="form-control form-control-lg" placeholder="Confirm Password" name="confirm_password">
+                        </div> -->
+                    </div>
+
+                    <div class="form-group col">
+                        <button type="submit" class="btn btn-lg">Register</button>
+                    </div>
+
+                </form>
+            <!-- End Registration Form -->
+            <!-- Card Text -->
+            <p class="card-text text-black-50 my-2">
+                Already have an account<span class="ms-2"><a routerLink="/login" class="btn btn-sm textwarning"> Sign In</a></span>
+            </p>
+            <!-- End Card Text -->
+
+            <!-- Back Button -->
+            <small class="textwarning">
+                <i class="fa fa-arrow-alt-circle-left"></i><a routerLink="/" class="btn btn-sm textwarning">Back</a>
+            </small>
+            <!-- End Back Button -->
+        </div>
+    </div>
+</div>

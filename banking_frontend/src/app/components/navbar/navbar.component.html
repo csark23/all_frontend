@@ -1,0 +1,36 @@
+<!-- Main Page Header -->
+
+<header class="main-page-header">
+    <div class="container d-flex align-items-center">
+        <!-- Company Name -->
+        <a routerLink="/">
+            <div class="company-name" style="font-size: 20px;">
+                Banking
+            </div>
+        </a>
+        <!-- End Company Name -->
+        <nav class="navigation ms-auto">
+            <li><a *ngIf="loggedIn" routerLink="/dashboard">Dashboard</a></li>
+            <li><a *ngIf="loggedIn" href="">Payment History</a></li>
+            <li><a *ngIf="loggedIn" href="">Transaction History</a></li>
+        </nav>
+
+        <!-- Display Name -->
+        <div *ngIf="user" class="display-name ms-auto text-white">
+            <i class="fa fa-circle text-success me-2"></i> Welcome: {{user.name}}<span> </span>
+        </div>
+        <!-- End of Display Name -->
+        <!-- <h3 class="text-dark ms-2"> | </h3> -->
+        <!-- Logout Button -->
+        <a *ngIf="!loggedIn"  routerLink="/login" class="btn btn-sm text-white ms-2">
+            <i class="fa-solid fa-right-to-bracket"></i> Login
+        </a>
+        <!-- End of Logout Button -->
+        <!-- Logout Button -->
+        <a *ngIf="loggedIn" (click)="logoutUser()" class="btn btn-sm text-white ms-2">
+            <i class="fa fa-sign-out-alt" ></i> Sign Out
+        </a>
+        <!-- End of Logout Button -->
+
+    </div>
+</header>
