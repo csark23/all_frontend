@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: Comfortaa;
+}
+
+/* Main Body Styling */
+body{
+    height: 100vh;
+    background-color: #c7ecee !important;
+}
+.container{
+    margin: 10px auto;
+}
+
+/* Main Page Header */
+.main-page-header{
+    padding: 10px 0px;
+
+}
+.main-page-header .company-name{
+    font-weight: 600;
+    color:white;
+}
+/* Navigation */
+.navigation{
+    
+    margin-left: 20px;
+}
+.navigation li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px 15px;
+}
+.navigation li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Display Name */
+.display-name{
+    /* box-shadow: 0px 3px 6px rgb(0,14,53); */
+    font-weight: 600;
+
+}
+/* End of Display Name */
+/* End of page Header */
+
+
+/* Transact Button */
+#transact-btn,#add-account-btn{
+    background-color: #1e3799;
+    border: 1px solid #543800;
+    color: white;
+    box-shadow: 0px 3px 6px #130f40 !important;
+}
+
+.offcanvas{
+    background-color: #54a0ff;
+}
+.transact-btn{
+    background-color: #1e3799;
+    border: 1px solid #543800;
+    color: white;
+}
+/* Card: Payment Card */
+.payment-card{
+    display: none;
+}
+
+/* Card:Transfer Card */
+.transfer-card{
+    display: none;
+}
+
+/* Card: deposit Card */
+.deposit-card{
+    display: none;
+}
+
+/* Card: Withdraw Card */
+.withdraw-card{
+    display: none;
+}
